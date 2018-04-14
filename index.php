@@ -2,8 +2,8 @@
   /**
    * Import kernel framework and routing 
    */
-  require_once 'vendors/primal/kernel/Kernel.php';
-  require_once 'vendors/primal/kernel/Router.php';
+  require_once '../vendor/luismoralesp/primal/kernel/Kernel.php';
+  require_once '../vendor/luismoralesp/primal/kernel/Router.php';
   /**
    * Set a default routing
    */
@@ -17,4 +17,4 @@
   /**
    * Show routed service
    */
-  echo $router->rout(realpath(dirname(__FILE__)));
+  echo $router->rout(realpath(dirname(__FILE__)) . '/..');
